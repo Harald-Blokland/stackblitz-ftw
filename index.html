@@ -1,66 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-   
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  
-  <body>
-    <header>
-      <!-- Navigasjonsbar, logo,
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>API Demo</title>
+  <script>
+    async function showCatFact() {
+      const response = await fetch("https://catfact.ninja/fact");
+      const catFact = await response.json();
+      console.log(catFact);
+      document.getElementById("cat-fact").innerHTML = catFact.fact;
+    }
+    </script>
+    <style>
+        body {
+            background-image: url("images/tabby.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #cat-fact {
+            font-size: 2em;
+            text-align: center;
+            margin: 1em;
+        }
+      </style>
+</head>
+
+<body onload="showCatFact()">
+    <p id="cat-fact">Random Cat Fact</p>
+</body>
+
+</html>
+  <body onload="showCatFact()">
+  <p>Open the browser's developer tools (CTRL + SHIFT + I) to view the console output.</p>
+</body>
+
+</html>
+
+<body>
+  <header>
+    <!-- Navigasjonsbar, logo,
       søk-funksjon, innlogging -->
-    </header>
-    <main>
-      </section>
-      <!-- Hero seksjon -->
-      <h1> Good day sir! </h1>
+  </header>
+  <main>
+    </section>
+    <!-- Hero seksjon -->
+    <h1> Good day sir! </h1>
 
     <section>
       <!-- Ulike seksjoner -->
       <section class="flexRow"></section>
       <!-- <Hero seksjon -->
 
-        
-        <div class="flexRow">
-          <!--første rad -->
-          <div class="spacing">
-            <h1>Masse skrift</h1>
-          </div>
-          <div class="spacing">
-            <h1>Enda mer skrift</h1>
-          </div>
-
+      <div class="hero"></div>
+      <div class="flexRow">
+        <!--første rad -->
+        <div class="spacing">
+          <h1>Masse skrift</h1>
         </div>
-        
-        <div class="flexRow">
-          <!--Andre rad-->
-          <div class="spacing">
-            <h1>Mye moro</h1>
-          </div>
-          <div class="spacing">
-            <h3>En hjemmeside skal det bli</h3>
-          </div>
-          <div class="spacing">
-            <h3>Skriver bare fordi at jeg kjeder meg</h3>
-          </div>
-
+        <div class="spacing">
+          <h1>Enda mer skrift</h1>
         </div>
-     
-        <div class="flexRow">
-          <!--Tredje rad -->          
+
+      </div>
+
+      <div class="flexRow">
+        <!--Andre rad-->
+        <div class="spacing">
+          <h1>Mye moro</h1>
+        </div>
+        <div class="spacing">
+          <h3>En hjemmeside skal det bli</h3>
+        </div>
+        <div class="spacing">
+          <h3>Skriver bare fordi at jeg kan</h3>
+        </div>
+
+      </div>
+
+      <div class="flexRow">
+        <!--Tredje rad -->
         <div class="spacing">
           <h3>Informasjon til massene</h3>
         </div>
-        <div class="spacing"></div>
-      </div>
+        <div class="spacing">
+          <h3>Alle gode ting er tre</h3>
+        </div>
 
-      </section>
-    
-              
-      
-  </body>
-  </html>
+    </section>
+
+
+
+</body>
+
+</html>
